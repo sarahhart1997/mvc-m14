@@ -1,6 +1,8 @@
 ## Heroku Live Link
+https://git.heroku.com/techie-talk-a14.git 
 
 ## Github Pages Link
+https://sarahhart1997.github.io/techie-talks-a14/
 
 ## Installation
 Run "npm i"
