@@ -49,9 +49,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       'id',
       'post_content',
       'title',
-      'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    ],
+      'created_at'],
     include: [
       {
         model: Comment,
