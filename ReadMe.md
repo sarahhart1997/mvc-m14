@@ -1,4 +1,6 @@
-## Live Link
+## Heroku Live Link
+
+## Github Pages Link
 
 ## Installation
 Run "npm i"
