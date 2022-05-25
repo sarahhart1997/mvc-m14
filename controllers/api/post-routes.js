@@ -3,7 +3,7 @@ const sequelize = require('../../config/connection');
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-// get all users
+// get all posts
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
@@ -36,11 +36,9 @@ router.get('/', (req, res) => {
     });
 });
 
+// Get post by id
 router.get('/:id', (req, res) => {
-  Post.findOne({
-    where: {
-      id: req.params.id
-    },
+  Post.findByPk(req.params.id, {
     attributes: [
       'id',
       'post_content',
