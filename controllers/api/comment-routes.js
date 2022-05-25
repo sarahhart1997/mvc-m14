@@ -2,8 +2,11 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// Get all comments
 router.get('/', (req, res) => {
-  Comment.findAll()
+  Comment.findAll({
+    order: [['created_at', 'DESC']]
+  })
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
@@ -11,6 +14,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// Post a comment
 router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
