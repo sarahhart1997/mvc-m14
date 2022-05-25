@@ -5,8 +5,6 @@ const withAuth = require('../utils/auth');
 
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-  console.log(req.session);
-  console.log('======================');
   Post.findAll({
     where: {
       user_id: req.session.user_id
@@ -15,7 +13,6 @@ router.get('/', withAuth, (req, res) => {
       'id',
       'post_content',
       'title',
-      'text',
       'created_at',
     ],
     include: [
@@ -80,6 +77,10 @@ router.get('/edit/:id', withAuth, (req, res) => {
     .catch(err => {
       res.status(500).json(err);
     });
+});
+
+router.get('/newpost', withAuth, (req, res) => {
+  res.render('add-post')
 });
 
 module.exports = router;
