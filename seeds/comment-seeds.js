@@ -2,122 +2,122 @@ const { Comment } = require('../models');
 
 const commentdata = [
   {
-    comment_text: 'Nunc rhoncus dui vel sem.',
+    comment_text: 'You are amazing!',
     user_id: 6,
     post_id: 1
   },
   {
-    comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
+    comment_text: 'Feeling so inspired',
     user_id: 6,
     post_id: 8
   },
   {
-    comment_text: 'Aliquam erat volutpat. In congue.',
+    comment_text: 'This is the future of tech',
     user_id: 3,
     post_id: 10
   },
   {
-    comment_text: 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+    comment_text: 'Thanks so much for trying this out',
     user_id: 3,
     post_id: 18
   },
   {
-    comment_text: 'In hac habitasse platea dictumst.',
+    comment_text: 'Great work',
     user_id: 7,
     post_id: 5
   },
   {
-    comment_text: 'Vivamus vestibulum sagittis sapien.',
+    comment_text: 'This is beautiful',
     user_id: 1,
     post_id: 20
   },
   {
-    comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
+    comment_text: 'Could not agree more',
     user_id: 6,
     post_id: 7
   },
   {
-    comment_text: 'Sed vel enim sit amet nunc viverra dapibus.',
+    comment_text: 'Example of comment here',
     user_id: 7,
     post_id: 4
   },
   {
-    comment_text: 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.',
+    comment_text: 'Running out of ideas of seeds',
     user_id: 6,
     post_id: 12
   },
   {
-    comment_text: 'Morbi a ipsum.',
+    comment_text: 'Hmmmm coming up with seed comments is hard',
     user_id: 6,
     post_id: 20
   },
   {
-    comment_text: 'Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.',
+    comment_text: 'Example Comment Here',
     user_id: 3,
     post_id: 14
   },
   {
-    comment_text: 'Donec ut mauris eget massa tempor convallis.',
+    comment_text: 'Example Comment Here 3',
     user_id: 5,
     post_id: 4
   },
   {
     comment_text:
-      'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
+      'Example Comment Here 4',
     user_id: 4,
     post_id: 9
   },
   {
     comment_text:
-      'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.',
+      'Example Comment Here 5',
     user_id: 5,
     post_id: 14
   },
   {
-    comment_text: 'Quisque porta volutpat erat.',
+    comment_text: 'Example Comment Here 7',
     user_id: 6,
     post_id: 2
   },
   {
-    comment_text: 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.',
+    comment_text: 'Example Comment Here 8',
     user_id: 8,
     post_id: 2
   },
   {
     comment_text:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+      'Example Comment Here 9',
     user_id: 2,
     post_id: 20
   },
   {
-    comment_text: 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.',
+    comment_text: 'Example Comment Here 10',
     user_id: 4,
     post_id: 11
   },
   {
     comment_text:
-      'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.',
+      'Example Comment Here 11',
     user_id: 5,
     post_id: 13
   },
   {
     comment_text:
-      'Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.',
+      'You are a star',
     user_id: 9,
     post_id: 16
   },
   {
-    comment_text: 'Curabitur convallis.',
+    comment_text: 'Total inspiration to all of us',
     user_id: 6,
     post_id: 4
   },
   {
-    comment_text: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+    comment_text: 'Keep up the excellent work',
     user_id: 4,
     post_id: 10
   },
   {
-    comment_text: 'Morbi non quam nec dui luctus rutrum.',
+    comment_text: 'Testing Example here',
     user_id: 3,
     post_id: 8
   },
